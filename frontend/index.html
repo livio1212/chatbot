@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SafeSpace - Seu Amigo Virtual</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body class="min-h-screen flex items-center justify-center p-4">
+  <div class="w-full max-w-3xl">
+    <!-- Título -->
+    <div class="flex items-center justify-center mb-6">
+      <h1 class="text-3xl font-bold text-indigo-700">SafeSpace</h1>
+    </div>
+
+    <!-- Chat -->
+    <div class="chat-container flex flex-col">
+      <!-- Mensagens -->
+      <div class="flex-1 p-4 overflow-y-auto" id="chat-messages">
+        <div class="flex mb-4">
+          <div class="bot-message message-bubble">
+            Olá! Eu sou seu Amigo Virtual. 😊 Pode me contar como está se sentindo hoje?
+          </div>
+        </div>
+      </div>
+
+      <!-- Entrada de texto -->
+      <div class="border-t border-gray-200 p-4 bg-white">
+        <div class="flex items-center">
+          <input type="text" id="user-input" placeholder="Digite sua mensagem..." 
+            class="flex-1 border border-gray-300 rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          <button id="send-btn" class="ml-2 bg-indigo-600 text-white p-2 rounded-full w-10 h-10 flex items-center justify-center">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script do chatbot -->
+  <script src="script.js"></script>
+</body>
+</html>
