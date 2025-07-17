@@ -2,8 +2,7 @@ const userInput = document.getElementById('user-input');
   const sendBtn = document.getElementById('send-btn');
   const chatMessages = document.getElementById('chat-messages');
 
-  // Substitua abaixo pela URL do seu backend hospedado
-  const BACKEND_URL = "http://127.0.0.1:5000/chat";
+
 
   function addMessage(message, type) {
     const messageDiv = document.createElement('div');
